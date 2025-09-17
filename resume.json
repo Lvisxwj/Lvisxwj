@@ -9,7 +9,7 @@
   },
     "avatar": {
     "hidden": false,
-    "src": "/avator.png",
+    "src": "/avatar.png",
     "shape": "circle",
     "size": "default"
   },
