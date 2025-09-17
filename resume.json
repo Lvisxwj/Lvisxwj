@@ -101,7 +101,7 @@
   "skillList": [
     {
       "skill_name": "精通Python, C, C++",
-      "skill_desc": "",
+      "skill_desc": "精通Python, C, C++",
       "skill_level": 100,
       "dataIndex": 0
     },
@@ -109,11 +109,11 @@
       "skill_name": "熟悉ReShade FX Shader",
       "skill_level": 80,
       "dataIndex": 1,
-      "skill_desc": ""
+      "skill_desc": "熟悉ReShade FX Shader"
     },
     {
       "skill_name": "算法/计算机视觉",
-      "skill_desc": "Unet, CNN, transformer, SVM, 图像重构，超分，DLSS",
+      "skill_desc": "了解算法/视觉：UNet, CNN, Transformer, SVM，图像重构、超分辨率（DLSS ）",
       "skill_level": 80,
       "dataIndex": 2
     },
@@ -125,17 +125,12 @@
   ],
   "awardList": [
     {
+      "award_time": "2025",
+      "award_info": "英语 CET6 600分"
+    },
+    {
       "award_time": "2024",
-      "award_info": "全国大学生英语竞赛校二等奖"
-    },
-    {
-      "award_info": "校级数学建模比赛二等奖",
-      "award_time": "2025",
-      "dataIndex": 3
-    },
-    {
-      "award_time": "2025",
-      "award_info": "数学建模国赛在评"
+      "award_info": "英语 CET4 580分"
     },
     {
       "award_info": "校级ACM比赛二等奖",
@@ -146,7 +141,21 @@
       "award_info": "校级二等奖学金",
       "award_time": "2024",
       "dataIndex": 5
+    },
+    {
+      "award_time": "2025",
+      "award_info": "数学建模国赛在评"
+    },
+    {
+      "award_info": "校级数学建模比赛二等奖",
+      "award_time": "2025",
+      "dataIndex": 3
+    },
+    {
+      "award_time": "2024",
+      "award_info": "全国大学生英语竞赛校二等奖"
     }
+    
   ],
   "theme": {
     "color": "#592E83",
