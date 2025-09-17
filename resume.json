@@ -7,11 +7,14 @@
     "awardList": "更多信息",
     "workList": "个人作品"
   },
-  "avatar": {
-    "hidden": false
+    "avatar": {
+    "hidden": false,
+    "src": "/avatar.png",
+    "shape": "circle",
+    "size": 120
   },
   "profile": {
-    "name": "姓名",
+    "name": "谢伟杰",
     "email": "xwj3253472084@gmail.com",
     "mobile": "18058975575",
     "github": "https://github.com/Lvisxwj",
