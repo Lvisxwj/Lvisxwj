@@ -9,7 +9,7 @@
   },
     "avatar": {
     "hidden": false,
-    "src": "./avatar.png",
+    "src": "https://raw.githubusercontent.com/Lvisxwj/resume/master/static/avatar.png",
     "shape": "circle",
     "size": "default"
   },
