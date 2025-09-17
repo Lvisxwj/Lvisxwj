@@ -11,7 +11,7 @@
     "hidden": false,
     "src": "/avator.png",
     "shape": "circle",
-    "size": 120
+    "size": "default"
   },
   "profile": {
     "name": "谢伟杰",
