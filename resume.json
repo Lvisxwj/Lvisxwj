@@ -9,12 +9,12 @@
   },
     "avatar": {
     "hidden": false,
-    "src": "https://raw.githubusercontent.com/Lvisxwj/resume/master/static/avatar.png",
+    "src": "/avatar.png",
     "shape": "circle",
     "size": "default"
   },
   "profile": {
-    "name": "谢伟杰",
+    "name": "白给",
     "email": "xwj3253472084@gmail.com",
     "mobile": "18058975575",
     "github": "https://github.com/Lvisxwj",
