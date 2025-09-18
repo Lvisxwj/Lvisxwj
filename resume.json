@@ -1,13 +1,13 @@
 {
   "titleNameMap": {
     "educationList": "教育背景",
-    "workExpList": "游戏相关经历",
+    "workExpList": "相关经历",
     "projectList": "项目与技术经历",
     "skillList": "个人技能",
     "awardList": "更多信息",
     "workList": "个人作品"
   },
-    "avatar": {
+  "avatar": {
     "hidden": false,
     "src": "https://raw.githubusercontent.com/Lvisxwj/resume/master/static/avatar.png",
     "shape": "circle",
@@ -21,7 +21,7 @@
     "zhihu": "",
     "workExpYear": "在校学生",
     "workPlace": "浙江杭州",
-    "positionTitle": "游戏研发工程师"
+    "positionTitle": "软件测试实习生"
   },
   "educationList": [
     {
@@ -33,18 +33,55 @@
     },
     {
       "edu_time": ["ML", "CS"],
-      "school": "核心课程：  ",
-      "major": " 机器学习、最优化理论与方法、计算机导论、C++ 面向对象程序设计、C语言程序设计、自动控制原理、高等数学 、计算机组成原理、计算机网络"
+      "school": "核心课程：",
+      "major": "机器学习、最优化理论与方法、计算机导论、C++ 面向对象程序设计、C语言程序设计、自动控制原理、高等数学、计算机组成原理、计算机网络、电路与电子技术、数字电子技术、微机原理与接口技术"
     },
     {
-      "edu_time": ["Year1", "year4"],
+      "edu_time": ["Year1", "Year4"],
       "school": "GPA：",
       "major": "84.99/100"
     }
   ],
+  "workExpList": [
+    {
+      "work_time": ["2021", "至今"],
+      "company_name": "软件与自动化相关实践",
+      "work_desc": "• 开发和调试浏览器自动化脚本（用于课程学习与题库测试），涉及任务模拟、自动化操作与异常处理;<br>• 使用 Python/Java 编写小型工具脚本，调试网页表单与数据交互逻辑;<br>• 在实验中处理日志分析与系统兼容性调试，涉及 Linux 基本命令、配置文件（ini/registry）修改与问题定位;<br>• 对自动化脚本的稳定性进行验证，并形成简要技术文档，提升团队使用效率。"
+    }
+  ],
+  "projectList": [
+    {
+      "project_name": "ReShade 插件开发与图像增强",
+      "project_role": "图形渲染/ Shader 调试",
+      "project_time": "2022, 2023",
+      "project_desc": "基于 ReShade 框架进行实时图像后处理特效的开发与验证，关注兼容性、稳定性与性能表现。",
+      "project_content": "1. 编写并调试 HLSL Shader，测试 Bloom、景深、色彩映射等效果在不同显卡/游戏中的稳定性;\n2. 设计兼容性测试用例，定位深度缓冲采样错误并进行修复;\n3. 借助 RenderDoc 分析 GPU 性能瓶颈，验证优化效果后平均帧率提升约 15%;\n4. 输出可复用的特效配置库，发布 Demo，并收集用户反馈进行回归测试与迭代。"
+    },
+    {
+      "project_name": "高光谱图像重建与超分研究（Coded-Aperture，深度学习模型）",
+      "project_role": "图像处理与模型验证",
+      "project_time": "2024, 2025",
+      "project_desc": "基于 CASSI 成像系统，测试与验证深度学习在高光谱图像重建中的稳定性与质量提升效果。",
+      "project_content": "1. 搭建基于 PyTorch 的训练与测试管道，对输入样本进行不同噪声/采样条件下的鲁棒性测试;\n2. 设计对比实验，用基线算法与自研模型在同一数据集上验证效果，重点评估光谱误差与空间细节;\n3. 在小样本与稀疏采样环境下，测试模型的稳定性与泛化性，发现并修正过拟合问题;\n4. 形成测试报告，对比不同正则化方法在性能提升与稳定性上的差异。"
+    },
+    {
+      "project_name": "MatplotStyle 可视化工具",
+      "project_role": "开发与验证",
+      "project_time": "2025, 2026",
+      "project_desc": "基于 Matplotlib 封装的科研绘图工具，强调可复现性与规范化，进行测试与版本迭代。",
+      "project_content": "1. 设计绘图函数接口并进行单元测试，确保折线图、柱状图、热力图等功能正确输出;\n2. 编写 YAML 配置文件测试用例，验证字体、颜色、线型切换功能在不同环境下的稳定性;\n3. 对比原始 Matplotlib 绘制流程，统计效率提升约 30%;\n4. 开源发布后，收集用户反馈并进行回归调试与版本优化。"
+    },
+    {
+      "project_name": "多线程调度与整数规划优化模型",
+      "project_role": "算法设计 / 调度测试",
+      "project_time": "2025, 2026",
+      "project_desc": "在数学建模竞赛与科研训练中，搭建调度与运输优化模型，重点验证算法性能与稳定性。",
+      "project_content": "1. 使用 Python + PuLP 搭建整数规划模型，并设计测试用例验证在不同约束下的可行解;\n2. 通过多线程并行与启发式方法进行性能压力测试，运行效率提升 3–10 倍;\n3. 针对大规模数据，验证优化策略对内存占用与时间复杂度的改善;\n4. 输出测试结果与性能对比报告，保证模型在竞赛与实验场景下的可靠性。"
+    }
+  ],
   "workList": [
     {
-      "work_name": "Research on Intelligent Computation  Algorithms for Plant Vegetation Indices in the  Measurement Domain of Snapshot  Hyperspectral Computational Imaging",
+      "work_name": "Research on Intelligent Computation Algorithms for Plant Vegetation Indices in the Measurement Domain of Snapshot Hyperspectral Computational Imaging",
       "work_desc": "ISPRS JPRS(Q1)在投",
       "visit_link": "https://github.com/Lvisxwj/coded-apture"
     },
@@ -55,80 +92,31 @@
       "dataIndex": 1
     }
   ],
-  "projectList": [
-    {
-      "project_name": "ReShade 插件开发与图像增强",
-      "project_role": "图形渲染/ Shader 开发",
-      "project_time": "2022, 2023",
-      "project_desc": "基于 ReShade 框架开发实时图像后处理特效，涉及 Shader 编程、渲染管线 Hook 与性能优化。项目旨在提升游戏画面表现力，并探索图形渲染的可扩展性。\n",
-      "project_content": "1. 编写 HLSL Shader，实现 Bloom、景深（DOF）、色彩映射、FXAA 等后处理效果；\n2. 研究 ReShade 渲染管线的 Hook 机制，调试帧缓冲与深度缓冲采样，解决效果兼容性问题；\n3. 使用 RenderDoc 分析 GPU 性能瓶颈，优化采样方式与内存访问，平均帧率提升约 15%；\n4. 输出一套可复用的特效配置库，适配多款 DX11 游戏，效果演示 Demo 发布至各大论坛。\n",
-      "dataIndex": 0
-    },
-    {
-      "project_name": "高光谱图像重建与超分研究（Coded-Aperture，深度学习模型）",
-      "project_role": "图像处理",
-      "project_time": "2024, 2025",
-      "project_desc": "基于 CASSI 高光谱成像系统，探索深度学习在光谱压缩采样与图像重建中的应用。通过光学掩码采样与深度学习模型相结合的方法，恢复图像的光谱与空间信息，在降低存储和采集成本的同时提升重建质量。项目思路与 DLSS 在资源效率与画面增强上的理念相似，体现了计算机视觉技术在图像重建与游戏图形增强中的迁移潜力。",
-      "project_content": "1. 搭建基于 PyTorch 的端到端模型，构建训练／重建管道，对 Coded-Aperture 掩码采样输出进行光谱与空间信息的恢复；\n2. 设计深度学习模型（包括 U-Net 类结构 + Multi-Headed Transformer 注意力模块）以在采样稀疏及噪声环境下保持光谱与空间保真度；\n3. 实施数据增强与正则化策略，改进重建模型在不同光谱通道、小样本数据下的稳定性；\n4. 在公共数据集与自己采集 /合成数据上评估重建性能，与基线重建算法比较提升重建质量（如光谱重建误差降低 /空间纹理还原更细腻）。",
-      "dataIndex": 1
-    },
-    {
-      "project_name": "MatplotStyle 可视化工具",
-      "project_role": "开发者",
-      "project_time": "2025, 2026",
-      "project_desc": "为数模/科研竞赛设计的统一风格绘图工具，基于 Matplotlib 封装并结合 YAML 配置文件，快速生成符合学术规范的图表。  \n主要工作",
-      "project_content": "1. 封装折线图、柱状图、热力图等绘图函数，提供统一的风格调用的简化接口；  \n2. 基于 YAML 配置支持字体、颜色、线条样式的一键切换；  \n3. 为团队建模论文绘图效率提升约 30%，保证了图表的可复现性与美观度；  \n4. 项目开源至 Github，获得建模团队内部与校内竞赛选手的应用反馈。",
-      "dataIndex": 2
-    },
-    {
-      "project_time": "2025, 2026",
-      "project_name": "多线程调度与整数规划优化模型 ",
-      "project_role": "算法设计 / 并行实现",
-      "project_desc": "在全国大学生数学建模竞赛与科研训练中，针对调度与运输问题建立整数规划与启发式模型，并结合多线程加速优化。  \n主要工作",
-      "project_content": "1. 使用 Python + PuLP 建立 0-1 整数规划模型，解决资源分配与调度优化问题；  \n2. 引入多线程并行计算与启发式算法，将运行效率提升 3–10 倍；  \n3. 通过剪枝、搜索策略与状态转移方程优化，将关键子问题由 O(n²) 简化至近似 O(n log n)，运行效率显著提升，内存占用减少；\n4. 模型在校内实验与竞赛场景中验证，通过多目标优化提升了调度公平性与整体利润。",
-      "dataIndex": 3
-    }
-  ],
-  "workExpList": [
-    {
-      "work_time": ["2020", "至今"],
-      "company_name": "国内外游戏社区3DM、ALI123、Nexus",
-      "work_desc": "• 在 3DM、ALI213、Nexus等社区活跃，主要针对玩家常见问题进行技术支持与优化;<br>• 调试游戏配置文件（ini/registry），解决 Win64 环境兼容性与性能问题;<br>• 分享图形效果优化方案（ReShade、Shader 调试、画质增强配置），提升玩家体验;<br>• 使用 CE 对游戏内存进行调试，跟踪角色属性与物品数据的存储方式，理解数据布局与指针寻址逻辑，总结经验并提炼为调试手册，发布技术文档以帮助玩家与开发者解决兼容性与优化问题。"
-    },
-    {
-      "work_time": ["2022", "2024 "],
-      "company_name": "Steam与游戏竞标赛",
-      "work_desc": "• Steam 账户等级43，年限8.8年，总游戏时长 5108h (全球前13%)；其中 TF2 游戏时长 2200h，达成全成就。  \n• 2024 亚洲杯 AsianFortressCup DIV3 季军；  \n• 2023 亚洲杯 AsianFortressCup Invite 参赛；  \n• 亚太地区 MGE Cup 中国区季军（2100分，前1%）；  \n• 国内 Midheart 竞标赛第三名。  "
-    },
-    {
-      "work_time": ["2023", "2025 "],
-      "company_name": "杭电GameMaker",
-      "work_desc": "• 杭电GameMaker社团程序组成员\n• 协助组织校GameJam的活动，参与杭州地区的GameJam活动，辅助完成类似小丑牌的打击效果的代码"
-    }
-  ],
   "skillList": [
     {
-      "skill_name": "精通Python, C, C++",
-      "skill_desc": "精通Python, C, C++",
-      "skill_level": 100,
-      "dataIndex": 0
-    },
-    {
-      "skill_name": "熟悉ReShade FX Shader",
-      "skill_level": 80,
-      "dataIndex": 1,
-      "skill_desc": "熟悉ReShade FX Shader"
-    },
-    {
-      "skill_name": "算法/计算机视觉",
-      "skill_desc": "了解算法/视觉：UNet, CNN, Transformer, SVM，图像重构、超分辨率（DLSS ）",
-      "skill_level": 80,
-      "dataIndex": 2
-    },
-    {
-      "skill_name": "数据可视化",
-      "skill_desc": "丰富的可视化工程实践以及开源经验",
+      "skill_name": "Python, C, C++, Java基础",
+      "skill_desc": "掌握多种编程语言，能独立开发与调试工具脚本",
       "skill_level": 90
+    },
+    {
+      "skill_name": "Linux 基本操作",
+      "skill_desc": "熟悉Linux命令行，能进行日志分析与环境配置",
+      "skill_level": 80
+    },
+    {
+      "skill_name": "SQL 基础",
+      "skill_desc": "了解基本增删改查语句，用于测试数据验证",
+      "skill_level": 60
+    },
+    {
+      "skill_name": "自动化测试与脚本",
+      "skill_desc": "具备浏览器自动化脚本开发经验，正在学习 Selenium 等测试工具",
+      "skill_level": 70
+    },
+    {
+      "skill_name": "数据可视化与算法",
+      "skill_desc": "有科研和项目经验，熟悉模型验证与实验数据分析",
+      "skill_level": 80
     }
   ],
   "awardList": [
@@ -163,7 +151,6 @@
       "award_time": "2024",
       "award_info": "全国大学生英语竞赛校二等奖"
     }
-    
   ],
   "theme": {
     "color": "#592E83",
