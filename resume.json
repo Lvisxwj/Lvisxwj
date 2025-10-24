@@ -1,11 +1,10 @@
 {
   "titleNameMap": {
     "educationList": "教育背景",
-    "workExpList": "科研及工程经历",
-    "projectList": "项目与技术经历",
-    "skillList": "个人技能",
-    "awardList": "更多信息",
-    "workList": "个人作品"
+    "projectList": "科研与项目经历",
+    "skillList": "专业技能",
+    "awardList": "荣誉与证书",
+    "workList": "科研成果"
   },
   "avatar": {
     "hidden": false,
@@ -18,108 +17,84 @@
     "email": "xwj3253472084@gmail.com",
     "mobile": "18058975575",
     "github": "https://github.com/Lvisxwj",
-    "zhihu": "",
     "workExpYear": "在校学生",
     "workPlace": "浙江杭州",
-    "positionTitle": "标定算法 / 数据分析实习生"
+    "positionTitle": "计算机视觉 / 三维重建算法实习生"
   },
   "educationList": [
     {
-      "edu_time": ["2023.09.01", "2027.06.30"],
+      "edu_time": ["2023.09", "2027.06"],
       "school": "杭州电子科技大学",
       "major": "智能科学与技术（人工智能方向）",
-      "academic_degree": "本科",
-      "dataIndex": 0
+      "academic_degree": "本科"
     },
     {
-      "edu_time": ["ML", "CV"],
-      "school": "核心课程：",
-      "major": "机器学习、计算机视觉、最优化理论与方法、C++ 面向对象程序设计、C语言程序设计、自动控制原理、信号与系统、概率论与数理统计"
+      "school": "核心课程",
+      "major": "机器学习、最优化理论与方法、计算机视觉、C++程序设计、深度学习、信号与系统、自动控制原理、计算机组成原理、计算机网络、高等数学"
     },
     {
-      "edu_time": ["Year1", "Year4"],
-      "school": "GPA：",
+      "school": "GPA",
       "major": "84.99 / 100"
     }
   ],
   "workList": [
     {
       "work_name": "Research on Intelligent Computation Algorithms for Hyperspectral Imaging",
-      "work_desc": "ISPRS JPRS (Q1) 在投",
+      "work_desc": "ISPRS JPRS (Q1) 在投论文；负责算法设计与实验验证。",
       "visit_link": "https://github.com/Lvisxwj/coded-apture"
     },
     {
       "work_name": "MatplotStyle_SpillYourGuts",
-      "work_desc": "开源科研绘图风格统一化工具，支持 YAML 驱动的可视化配置",
-      "visit_link": "https://github.com/Lvisxwj/MatplotStyle_SpillYourGuts",
-      "dataIndex": 1
+      "work_desc": "开源科研可视化风格工具，统一Matplotlib图表风格，提升科研绘图规范性与复现性。",
+      "visit_link": "https://github.com/Lvisxwj/MatplotStyle_SpillYourGuts"
     }
   ],
   "projectList": [
     {
-      "project_name": "高光谱图像重建与系统标定研究（CASSI + 深度学习）",
-      "project_role": "算法研发 / 标定实验",
-      "project_time": "2024 - 2025",
-      "project_desc": "结合 Coded-Aperture Snapshot Spectral Imaging (CASSI) 系统与深度学习方法进行图像光谱重建与系统标定，提高成像精度与几何一致性。",
-      "project_content": "1. 使用 Python + OpenCV 设计相机内外参标定与光学掩模几何校正流程；\n2. 基于 PyTorch 实现 U-Net + Transformer 网络恢复光谱与空间信息；\n3. 通过误差分析与 SSIM/PSNR 指标评估模型性能，重建精度较传统算法提升 18%；\n4. 构建可复用标定模块并封装为数据预处理接口。"
-    },
-    {
-      "project_name": "MatplotStyle 科研可视化系统",
-      "project_role": "工具开发 / 数据展示",
-      "project_time": "2025 - 2026",
-      "project_desc": "科研绘图自动化与风格化工具，用于实验数据对比与报告生成。",
-      "project_content": "1. 封装折线图、热力图、柱状图等绘图函数，支持 YAML 配置式调用；\n2. 应用于标定与传感器实验数据结果可视化，提升展示效率约 30%；\n3. 开源至 GitHub，获得校内科研团队应用反馈。"
-    },
-    {
-      "project_name": "多线程调度与整数规划优化模型",
-      "project_role": "算法设计 / 并行优化",
+      "project_name": "三维点云重建与表面拟合算法研究",
+      "project_role": "算法研发 / 数据建模",
       "project_time": "2025",
-      "project_desc": "在数学建模竞赛与科研训练中设计多目标优化调度模型，并结合多线程并行实现高效求解。",
-      "project_content": "1. 使用 Python + PuLP 构建整数规划模型，解决资源调度与分配问题；\n2. 引入多线程加速与剪枝搜索策略，运算效率提升 3-10 倍；\n3. 优化内存占用并改进状态转移逻辑，使算法更稳定。"
-    }
-  ],
-  "workExpList": [
-    {
-      "work_time": ["2024", "至今"],
-      "company_name": "杭州电子科技大学 · 视觉与智能计算实验室",
-      "work_desc": "• 参与光学系统标定与高光谱图像重建项目；<br>• 负责实验数据采集、标定算法编写与模型训练；<br>• 使用 OpenCV、PyTorch 完成光学几何重建与图像配准；<br>• 论文方向为计算成像与 AI 光谱恢复算法。"
+      "project_desc": "针对工业扫描场景的点云重建任务，研究基于特征提取与几何约束的三维点云重建与表面拟合算法，实现从稀疏点到连续曲面的高精度重建。",
+      "project_content": "1. 使用Open3D与PCL实现点云去噪、下采样与法向量估计；\n2. 基于RANSAC与最小二乘曲面拟合实现模型重建；\n3. 在自采样工业件点云上测试，表面拟合误差控制在1.5mm以内；\n4. 成果应用于数学建模比赛并获奖。"
     },
     {
-      "work_time": ["2023", "2024"],
-      "company_name": "数模竞赛与科研项目组",
-      "work_desc": "• 负责优化算法设计与实验结果分析；<br>• 使用 Pandas / Matplotlib 进行数据统计与可视化；<br>• 研究整数规划、启发式算法与调度模型的工业应用。"
+      "project_name": "高光谱图像重建与三维成像系统研究（Coded-Aperture + 深度学习）",
+      "project_role": "算法设计 / 模型优化",
+      "project_time": "2024 - 2025",
+      "project_desc": "结合光学编码系统与深度学习实现高光谱图像三维重建，探索多维成像与几何配准方法在计算成像中的融合应用。",
+      "project_content": "1. 搭建基于PyTorch的光谱重建网络，设计U-Net + Transformer混合架构；\n2. 实现光学系统的几何标定与图像配准，优化光轴一致性；\n3. 在自制数据集上完成训练与重建，PSNR提升约18%；\n4. 成果作为ISPRS JPRS论文在投。"
+    },
+
+    {
+      "project_name": "多线程优化与整数规划模型（全国大学生数学建模竞赛）",
+      "project_role": "算法设计 / 并行实现",
+      "project_time": "2025",
+      "project_desc": "基于调度与运输问题建立多目标整数规划模型，并通过多线程优化加速算法求解。",
+      "project_content": "1. 使用Python + PuLP构建优化模型，定义资源调度约束；\n2. 引入多线程并行策略，运行时间缩短约6倍；\n3. 通过剪枝与启发式搜索提高模型稳定性与收敛速度。"
     }
   ],
   "skillList": [
     {
       "skill_name": "编程语言",
-      "skill_desc": "精通 Python、C++，熟悉面向对象编程与算法实现",
-      "skill_level": 100,
-      "dataIndex": 0
+      "skill_desc": "精通Python、C++，熟悉面向对象设计与算法实现"
     },
     {
       "skill_name": "算法与模型",
-      "skill_desc": "掌握几何标定、SLAM、ICP、CNN、Transformer 等算法；了解传感器融合与优化方法",
-      "skill_level": 90,
-      "dataIndex": 1
+      "skill_desc": "掌握三维重建、点云处理、ICP配准、深度学习、几何标定与优化算法"
     },
     {
-      "skill_name": "数据分析与可视化",
-      "skill_desc": "熟悉 NumPy / Pandas / Matplotlib / Seaborn，能独立完成数据清洗与统计分析",
-      "skill_level": 90,
-      "dataIndex": 2
+      "skill_name": "工具与平台",
+      "skill_desc": "熟练使用PyTorch、OpenCV、Open3D、PCL、Git、Linux、VSCode、YAML Config"
     },
     {
-      "skill_name": "工程工具",
-      "skill_desc": "熟悉 OpenCV、PyTorch、Git、Linux、VSCode、YAML 配置管理",
-      "skill_level": 85,
-      "dataIndex": 3
+      "skill_name": "科研与工程能力",
+      "skill_desc": "具备从算法原型到工程实现的完整能力，熟悉科研论文撰写与实验数据分析"
     }
   ],
   "awardList": [
     {
       "award_time": "2025",
-      "award_info": "数学建模国赛省三等奖"
+      "award_info": "数学建模国赛省三等将"
     },
     {
       "award_time": "2024",
@@ -127,11 +102,11 @@
     },
     {
       "award_time": "2024",
-      "award_info": "ACM 校级比赛二等奖"
+      "award_info": "英语CET-6（600分）"
     },
     {
       "award_time": "2024",
-      "award_info": "英语 CET-6（600分）"
+      "award_info": "ACM程序设计校赛二等奖"
     },
     {
       "award_time": "2024",
@@ -139,7 +114,7 @@
     }
   ],
   "theme": {
-    "color": "#0A84FF",
-    "tagColor": "#0269C3"
+    "color": "#0076CE",
+    "tagColor": "#2C8ED6"
   }
 }
