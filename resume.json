@@ -1,13 +1,12 @@
 {
   "titleNameMap": {
     "educationList": "教育背景",
-    "workExpList": "游戏相关经历",
-    "projectList": "项目与技术经历",
-    "skillList": "个人技能",
-    "awardList": "更多信息",
-    "workList": "个人作品"
+    "projectList": "科研与项目经历",
+    "skillList": "专业技能",
+    "awardList": "荣誉与证书",
+    "workList": "科研成果"
   },
-    "avatar": {
+  "avatar": {
     "hidden": false,
     "src": "https://raw.githubusercontent.com/Lvisxwj/resume/master/static/avatar.png",
     "shape": "circle",
@@ -18,160 +17,110 @@
     "email": "xwj3253472084@gmail.com",
     "mobile": "18058975575",
     "github": "https://github.com/Lvisxwj",
-    "zhihu": "",
     "workExpYear": "在校学生",
     "workPlace": "浙江杭州",
-    "positionTitle": "游戏研发工程师"
+    "positionTitle": "计算机视觉 / 算法研发实习生 / 软件开发"
   },
   "educationList": [
     {
-      "edu_time": ["2023.09.01", "2027.06.30"],
+      "edu_time": ["2023.09", "2027.06"],
       "school": "杭州电子科技大学",
-      "major": "智能科学与技术",
-      "academic_degree": "本科",
-      "dataIndex": 0
+      "major": "智能科学与技术（人工智能方向）",
+      "academic_degree": "本科"
     },
     {
-      "edu_time": ["ML", "CS"],
-      "school": "核心课程：  ",
-      "major": " 机器学习、最优化理论与方法、计算机导论、C++ 面向对象程序设计、C语言程序设计、自动控制原理、高等数学 、计算机组成原理、计算机网络"
+      "school": "核心课程",
+      "major": "机器学习、最优化理论与方法、计算机视觉、C++面向对象设计、深度学习、自动控制原理、计算机组成原理、计算机网络、高等数学"
     },
     {
-      "edu_time": ["Year1", "year4"],
-      "school": "GPA：",
-      "major": "84.99/100"
+      "school": "GPA",
+      "major": "84.99 / 100"
     }
   ],
   "workList": [
     {
-      "work_name": "Research on Intelligent Computation  Algorithms for Plant Vegetation Indices in the  Measurement Domain of Snapshot  Hyperspectral Computational Imaging",
-      "work_desc": "ISPRS JPRS(Q1)在投",
+      "work_name": "Research on Intelligent Computation Algorithms for Hyperspectral Imaging",
+      "work_desc": "ISPRS JPRS (Q1) 在投",
       "visit_link": "https://github.com/Lvisxwj/coded-apture"
     },
     {
       "work_name": "MatplotStyle_SpillYourGuts",
-      "work_desc": "开源可视化风格工具",
-      "visit_link": "https://github.com/Lvisxwj/MatplotStyle_SpillYourGuts",
-      "dataIndex": 1
+      "work_desc": "开源科研绘图风格管理工具，用于论文可视化标准化",
+      "visit_link": "https://github.com/Lvisxwj/MatplotStyle_SpillYourGuts"
     }
   ],
   "projectList": [
     {
-      "project_name": "ReShade 插件开发与图像增强",
-      "project_role": "图形渲染/ Shader 开发",
-      "project_time": "2022, 2023",
-      "project_desc": "基于 ReShade 框架开发实时图像后处理特效，涉及 Shader 编程、渲染管线 Hook 与性能优化。项目旨在提升游戏画面表现力，并探索图形渲染的可扩展性。\n",
-      "project_content": "1. 编写 HLSL Shader，实现 Bloom、景深（DOF）、色彩映射、FXAA 等后处理效果；\n2. 研究 ReShade 渲染管线的 Hook 机制，调试帧缓冲与深度缓冲采样，解决效果兼容性问题；\n3. 使用 RenderDoc 分析 GPU 性能瓶颈，优化采样方式与内存访问，平均帧率提升约 15%；\n4. 输出一套可复用的特效配置库，适配多款 DX11 游戏，效果演示 Demo 发布至各大论坛。\n",
-      "dataIndex": 0
+      "project_name": "高光谱图像重建与超分研究（Coded-Aperture + 深度学习）",
+      "project_role": "算法研发 / 模型设计",
+      "project_time": "2024-2025",
+      "project_desc": "基于CASSI系统的高光谱图像重建研究，结合光学编码与深度学习模型恢复三维光谱信息，实现高保真光谱图像重建。",
+      "project_content": "1. 使用PyTorch实现端到端CASSI重建网络，设计U-Net + Transformer融合结构；\n2. 在噪声环境下通过正则化和光谱一致性损失提高模型稳健性；\n3. 对比传统优化算法（TwIST、GAP-TV），重建误差降低15%以上；\n4. 研究结果作为ISPRS JPRS论文在投。"
     },
     {
-      "project_name": "高光谱图像重建与超分研究（Coded-Aperture，深度学习模型）",
-      "project_role": "图像处理",
-      "project_time": "2024, 2025",
-      "project_desc": "基于 CASSI 高光谱成像系统，探索深度学习在光谱压缩采样与图像重建中的应用。通过光学掩码采样与深度学习模型相结合的方法，恢复图像的光谱与空间信息，在降低存储和采集成本的同时提升重建质量。项目思路与 DLSS 在资源效率与画面增强上的理念相似，体现了计算机视觉技术在图像重建与游戏图形增强中的迁移潜力。",
-      "project_content": "1. 搭建基于 PyTorch 的端到端模型，构建训练／重建管道，对 Coded-Aperture 掩码采样输出进行光谱与空间信息的恢复；\n2. 设计深度学习模型（包括 U-Net 类结构 + Multi-Headed Transformer 注意力模块）以在采样稀疏及噪声环境下保持光谱与空间保真度；\n3. 实施数据增强与正则化策略，改进重建模型在不同光谱通道、小样本数据下的稳定性；\n4. 在公共数据集与自己采集 /合成数据上评估重建性能，与基线重建算法比较提升重建质量（如光谱重建误差降低 /空间纹理还原更细腻）。",
-      "dataIndex": 1
-    },
-
-    {
-      "project_name": "Doom 多智能体强化学习 Agent",
-      "project_role": "AI Agent / 强化学习开发",
+      "project_name": "点云与图像配准算法研究",
+      "project_role": "算法开发",
       "project_time": "2025",
-      "project_desc": "基于 VizDoom FPS 环境实现 AI 自主游玩项目，采用深度强化学习训练智能体完成射击、防御、导航等任务，并结合多模块化 Agent 设计与可视化展示，探索 RL 与 Agent 框架的结合场景。\n",
-      "project_content": "1. 使用 VizDoom + Gym 搭建 FPS 环境，基于 DQN / PPO 等算法训练智能体，完成 Basic、Defend Center 等场景任务；\n2. 封装状态特征（血量、弹药、敌人位置），定义高层 function 接口（如 fight、retreat、heal），实现智能体模块化；\n3. 设计多智能体协作框架，模拟 MCP 结构，高层 Planner 调用低层 RL 子模块完成任务；\n4. 增强展示效果：在测试可视化中加入实时 overlay（如虚拟角色反馈），提升演示与交互性。\n",
-      "dataIndex": 1
-    },
-
-    {
-      "project_name": "MatplotStyle 可视化工具",
-      "project_role": "开发者",
-      "project_time": "2025, 2026",
-      "project_desc": "为数模/科研竞赛设计的统一风格绘图工具，基于 Matplotlib 封装并结合 YAML 配置文件，快速生成符合学术规范的图表。  \n",
-      "project_content": "1. 封装折线图、柱状图、热力图等绘图函数，提供统一的风格调用的简化接口；  \n2. 基于 YAML 配置支持字体、颜色、线条样式的一键切换；  \n3. 为团队建模论文绘图效率提升约 30%，保证了图表的可复现性与美观度；  \n4. 项目开源至 Github，获得建模团队内部与校内竞赛选手的应用反馈。",
-      "dataIndex": 2
+      "project_desc": "针对三维扫描场景中的配准问题，基于特征提取与ICP迭代优化，实现点云全局对齐与姿态估计。",
+      "project_content": "1. 实现基于FPFH特征与RANSAC初始对齐的点云配准算法；\n2. 结合多尺度特征匹配与KD-Tree搜索加速点对应；\n3. 平均配准误差低于2mm，算法稳定性提升显著；\n4. 代码模块化封装，适配多种工业3D扫描场景。"
     },
     {
-      "project_time": "2025, 2026",
-      "project_name": "多线程调度与整数规划优化模型 ",
-      "project_role": "算法设计 / 并行实现",
-      "project_desc": "在全国大学生数学建模竞赛与科研训练中，针对调度与运输问题建立整数规划与启发式模型，并结合多线程加速优化。  \n",
-      "project_content": "1. 使用 Python + PuLP 建立 0-1 整数规划模型，解决资源分配与调度优化问题；  \n2. 引入多线程并行计算与启发式算法，将运行效率提升 3–10 倍；  \n3. 通过剪枝、搜索策略与状态转移方程优化，将关键子问题由 O(n²) 简化至近似 O(n log n)，运行效率显著提升，内存占用减少；\n4. 模型在校内实验与竞赛场景中验证，通过多目标优化提升了调度公平性与整体利润。",
-      "dataIndex": 3
-    }
-  ],
-  "workExpList": [
-    {
-      "work_time": ["2020", "至今"],
-      "company_name": "国内外游戏社区3DM、ALI123、Nexus",
-      "work_desc": "• 在 3DM、ALI213、Nexus等社区活跃，主要针对玩家常见问题进行技术支持与优化;<br>• 调试游戏配置文件（ini/registry），解决 Win64 环境兼容性与性能问题;<br>• 分享图形效果优化方案（ReShade、Shader 调试、画质增强配置），提升玩家体验;<br>• 使用 CE 对游戏内存进行调试，跟踪角色属性与物品数据的存储方式，理解数据布局与指针寻址逻辑，总结经验并提炼为调试手册，发布技术文档以帮助玩家与开发者解决兼容性与优化问题。"
+      "project_name": "MatplotStyle科研绘图可视化系统",
+      "project_role": "工具开发",
+      "project_time": "2025",
+      "project_desc": "为科研绘图与建模竞赛提供统一风格接口，基于Matplotlib封装并通过YAML配置文件实现风格一键切换。",
+      "project_content": "1. 封装折线图、柱状图、热力图等可视化函数；\n2. 设计统一字体与颜色模板，支持中英混排；\n3. 提升团队论文绘图效率约30%，保证图表复现性。"
     },
     {
-      "work_time": ["2022", "2024 "],
-      "company_name": "Steam与游戏竞标赛",
-      "work_desc": "• Steam 账户等级43，年限8.8年，总游戏时长 5108h (全球前13%)；其中 TF2 游戏时长 2200h，达成全成就。  \n• 2024 亚洲杯 AsianFortressCup DIV3 季军；  \n• 2023 亚洲杯 AsianFortressCup Invite 参赛；  \n• 亚太地区 MGE Cup 中国区季军（2100分，前1%）；  \n• 国内 Midheart 竞标赛第三名。  "
+      "project_name": "多线程调度与整数规划优化模型",
+      "project_role": "算法设计 / 优化实现",
+      "project_time": "2025",
+      "project_desc": "针对数学建模赛题构建多目标调度优化模型，通过多线程并行计算实现复杂约束下的快速求解。",
+      "project_content": "1. 基于PuLP构建整数规划模型，解决运输与资源调度问题；\n2. 引入启发式搜索与多线程并行加速，效率提升3-10倍；\n3. 在多目标优化实验中取得良好收敛效果。"
     }
   ],
   "skillList": [
     {
-      "skill_name": "精通Python, C, C++",
-      "skill_desc": "精通Python, C, C++",
-      "skill_level": 100,
-      "dataIndex": 0
+      "skill_name": "编程语言",
+      "skill_desc": "Python、C++、C，具备良好的面向对象设计与工程实现能力"
     },
     {
-      "skill_name": "熟悉ReShade FX Shader",
-      "skill_level": 80,
-      "dataIndex": 1,
-      "skill_desc": "熟悉ReShade FX Shader"
+      "skill_name": "算法与模型",
+      "skill_desc": "掌握CNN、UNet、Transformer、SVM等算法；熟悉点云处理、图像重建、3D视觉与优化方法"
     },
     {
-      "skill_name": "算法/计算机视觉",
-      "skill_desc": "了解算法/视觉：UNet, CNN, Transformer, SVM，图像重构、超分辨率（DLSS ）",
-      "skill_level": 80,
-      "dataIndex": 2
+      "skill_name": "工具与平台",
+      "skill_desc": "熟悉PyTorch、OpenCV、Matplotlib、Git、Linux、VSCode、YAML配置管理"
     },
     {
-      "skill_name": "数据可视化",
-      "skill_desc": "丰富的可视化工程实践以及开源经验",
-      "skill_level": 90
+      "skill_name": "数据与可视化",
+      "skill_desc": "擅长科研绘图与图像结果展示，熟悉论文可视化标准化流程"
     }
   ],
   "awardList": [
     {
       "award_time": "2025",
-      "award_info": "英语 CET6 600分"
+      "award_info": "英语CET-6（600分）"
     },
     {
       "award_time": "2024",
-      "award_info": "英语 CET4 580分"
-    },
-    {
-      "award_info": "校级ACM比赛二等奖",
-      "award_time": "2024",
-      "dataIndex": 3
-    },
-    {
-      "award_info": "校级二等奖学金",
-      "award_time": "2024",
-      "dataIndex": 5
+      "award_info": "校级数学建模二等奖"
     },
     {
       "award_time": "2025",
-      "award_info": "数学建模国赛在评"
-    },
-    {
-      "award_info": "校级数学建模比赛二等奖",
-      "award_time": "2025",
-      "dataIndex": 3
+      "award_info": "数学建模国赛省三"
     },
     {
       "award_time": "2024",
-      "award_info": "全国大学生英语竞赛校二等奖"
+      "award_info": "ACM校赛二等奖"
+    },
+    {
+      "award_time": "2024",
+      "award_info": "二等奖学金"
     }
-    
   ],
   "theme": {
-    "color": "#592E83",
-    "tagColor": "#2E86AB"
+    "color": "#4B4DBA",
+    "tagColor": "#1B75BB"
   }
 }
