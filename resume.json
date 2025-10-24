@@ -1,7 +1,8 @@
 {
   "titleNameMap": {
     "educationList": "教育背景",
-    "projectList": "科研与项目经历",
+    "workExpList": "科研与技术经历",
+    "projectList": "项目与算法研究",
     "skillList": "专业技能",
     "awardList": "荣誉与证书",
     "workList": "科研成果"
@@ -17,84 +18,109 @@
     "email": "xwj3253472084@gmail.com",
     "mobile": "18058975575",
     "github": "https://github.com/Lvisxwj",
+    "zhihu": "",
     "workExpYear": "在校学生",
     "workPlace": "浙江杭州",
     "positionTitle": "计算机视觉 / 三维重建算法实习生"
   },
   "educationList": [
     {
-      "edu_time": ["2023.09", "2027.06"],
+      "edu_time": ["2023.09.01", "2027.06.30"],
       "school": "杭州电子科技大学",
       "major": "智能科学与技术（人工智能方向）",
-      "academic_degree": "本科"
+      "academic_degree": "本科",
+      "dataIndex": 0
     },
     {
-      "school": "核心课程",
-      "major": "机器学习、最优化理论与方法、计算机视觉、C++程序设计、深度学习、信号与系统、自动控制原理、计算机组成原理、计算机网络、高等数学"
+      "edu_time": ["ML", "CV"],
+      "school": "核心课程：",
+      "major": "机器学习、最优化理论与方法、计算机视觉、深度学习、C++程序设计、自动控制原理、计算机组成原理、信号与系统、计算机网络"
     },
     {
-      "school": "GPA",
-      "major": "84.99 / 100"
+      "edu_time": ["Year1", "Year4"],
+      "school": "GPA：",
+      "major": "84.99/100"
     }
   ],
   "workList": [
     {
       "work_name": "Research on Intelligent Computation Algorithms for Hyperspectral Imaging",
-      "work_desc": "ISPRS JPRS (Q1) 在投论文；负责算法设计与实验验证。",
+      "work_desc": "ISPRS JPRS(Q1) 在投论文，负责模型设计与实验验证。",
       "visit_link": "https://github.com/Lvisxwj/coded-apture"
     },
     {
       "work_name": "MatplotStyle_SpillYourGuts",
-      "work_desc": "开源科研可视化风格工具，统一Matplotlib图表风格，提升科研绘图规范性与复现性。",
-      "visit_link": "https://github.com/Lvisxwj/MatplotStyle_SpillYourGuts"
+      "work_desc": "开源科研可视化风格工具，统一Matplotlib图表样式，提高科研绘图规范化与复现性。",
+      "visit_link": "https://github.com/Lvisxwj/MatplotStyle_SpillYourGuts",
+      "dataIndex": 1
     }
   ],
   "projectList": [
     {
-      "project_name": "三维点云重建与表面拟合算法研究",
+      "project_name": "点云三维重建与表面拟合算法研究",
       "project_role": "算法研发 / 数据建模",
       "project_time": "2025",
       "project_desc": "针对工业扫描场景的点云重建任务，研究基于特征提取与几何约束的三维点云重建与表面拟合算法，实现从稀疏点到连续曲面的高精度重建。",
-      "project_content": "1. 使用Open3D与PCL实现点云去噪、下采样与法向量估计；\n2. 基于RANSAC与最小二乘曲面拟合实现模型重建；\n3. 在自采样工业件点云上测试，表面拟合误差控制在1.5mm以内；\n4. 成果应用于数学建模比赛并获奖。"
+      "project_content": "1. 使用Open3D与PCL实现点云去噪、下采样与法向量估计；\n2. 基于RANSAC与最小二乘曲面拟合实现模型重建；\n3. 在自采样工业件点云上测试，表面拟合误差控制在1.5mm以内；\n4. 结果应用于数学建模比赛并获奖。"
     },
     {
       "project_name": "高光谱图像重建与三维成像系统研究（Coded-Aperture + 深度学习）",
       "project_role": "算法设计 / 模型优化",
-      "project_time": "2024 - 2025",
+      "project_time": "2024, 2025",
       "project_desc": "结合光学编码系统与深度学习实现高光谱图像三维重建，探索多维成像与几何配准方法在计算成像中的融合应用。",
-      "project_content": "1. 搭建基于PyTorch的光谱重建网络，设计U-Net + Transformer混合架构；\n2. 实现光学系统的几何标定与图像配准，优化光轴一致性；\n3. 在自制数据集上完成训练与重建，PSNR提升约18%；\n4. 成果作为ISPRS JPRS论文在投。"
+      "project_content": "1. 搭建PyTorch端到端光谱重建网络，设计U-Net + Transformer融合结构；\n2. 实现光学系统几何标定与图像配准，优化光轴一致性；\n3. 在自制数据集上完成训练与重建，PSNR提升约18%；\n4. 研究结果作为ISPRS JPRS论文在投。"
     },
 
     {
-      "project_name": "多线程优化与整数规划模型（全国大学生数学建模竞赛）",
+      "project_name": "多线程优化与整数规划调度模型（全国大学生数学建模竞赛）",
       "project_role": "算法设计 / 并行实现",
-      "project_time": "2025",
-      "project_desc": "基于调度与运输问题建立多目标整数规划模型，并通过多线程优化加速算法求解。",
-      "project_content": "1. 使用Python + PuLP构建优化模型，定义资源调度约束；\n2. 引入多线程并行策略，运行时间缩短约6倍；\n3. 通过剪枝与启发式搜索提高模型稳定性与收敛速度。"
+      "project_time": "2025, 2026",
+      "project_desc": "在调度与运输问题上构建多目标整数规划模型，结合多线程优化加速求解。",
+      "project_content": "1. 使用Python + PuLP建立整数规划模型，解决资源调度与路径优化；\n2. 引入多线程并行机制，运行时间缩短约6倍；\n3. 通过剪枝与启发式搜索提高模型收敛稳定性。"
+    }
+  ],
+  "workExpList": [
+    {
+      "work_time": ["2024", "至今"],
+      "company_name": "实验室科研实践（杭州电子科技大学）",
+      "work_desc": "• 负责三维视觉相关算法研究与数据实验；<br>• 熟悉点云数据采集与标定流程，进行误差建模与可视化；<br>• 参与编写科研论文与实验报告，完成算法模块代码封装与文档撰写。"
+    },
+    {
+      "work_time": ["2023", "2024"],
+      "company_name": "数模与算法竞赛团队",
+      "work_desc": "• 建立调度优化与图像分析模型，完成国赛算法实现；<br>• 参与数学建模、图像识别、三维数据分析等跨学科项目；<br>• 熟练使用Python进行数据分析与可视化展示。"
     }
   ],
   "skillList": [
     {
       "skill_name": "编程语言",
-      "skill_desc": "精通Python、C++，熟悉面向对象设计与算法实现"
+      "skill_desc": "精通Python、C++、C，具备良好的面向对象设计与工程实现能力",
+      "skill_level": 100,
+      "dataIndex": 0
     },
     {
       "skill_name": "算法与模型",
-      "skill_desc": "掌握三维重建、点云处理、ICP配准、深度学习、几何标定与优化算法"
+      "skill_desc": "掌握三维重建、点云处理、ICP配准、CNN/UNet/Transformer、几何标定与优化算法",
+      "skill_level": 90,
+      "dataIndex": 1
     },
     {
       "skill_name": "工具与平台",
-      "skill_desc": "熟练使用PyTorch、OpenCV、Open3D、PCL、Git、Linux、VSCode、YAML Config"
+      "skill_desc": "熟悉PyTorch、OpenCV、Open3D、PCL、Git、Linux、VSCode、YAML配置管理",
+      "skill_level": 85,
+      "dataIndex": 2
     },
     {
-      "skill_name": "科研与工程能力",
-      "skill_desc": "具备从算法原型到工程实现的完整能力，熟悉科研论文撰写与实验数据分析"
+      "skill_name": "科研与可视化",
+      "skill_desc": "具备科研绘图、实验数据分析、论文结果可视化经验",
+      "skill_level": 90,
+      "dataIndex": 3
     }
   ],
   "awardList": [
     {
       "award_time": "2025",
-      "award_info": "数学建模国赛省三等将"
+      "award_info": "数学建模国赛省三等奖"
     },
     {
       "award_time": "2024",
@@ -114,7 +140,7 @@
     }
   ],
   "theme": {
-    "color": "#0076CE",
-    "tagColor": "#2C8ED6"
+    "color": "#0056B3",
+    "tagColor": "#2E86AB"
   }
 }
