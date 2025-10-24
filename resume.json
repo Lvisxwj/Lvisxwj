@@ -1,8 +1,8 @@
 {
   "titleNameMap": {
     "educationList": "教育背景",
-    "workExpList": "科研与技术经历",
-    "projectList": "项目与算法研究",
+    "workExpList": "科研与项目经历",
+    "projectList": "算法与工程项目",
     "skillList": "专业技能",
     "awardList": "荣誉与证书",
     "workList": "科研成果"
@@ -21,7 +21,7 @@
     "zhihu": "",
     "workExpYear": "在校学生",
     "workPlace": "浙江杭州",
-    "positionTitle": "计算机视觉 / 三维重建算法实习生"
+    "positionTitle": "C++ / 机器人算法实习生"
   },
   "educationList": [
     {
@@ -32,9 +32,9 @@
       "dataIndex": 0
     },
     {
-      "edu_time": ["ML", "CV"],
+      "edu_time": ["ML", "Robotics"],
       "school": "核心课程：",
-      "major": "机器学习、最优化理论与方法、计算机视觉、深度学习、C++程序设计、自动控制原理、计算机组成原理、信号与系统、计算机网络"
+      "major": "机器学习、最优化理论与方法、C++面向对象、深度学习、自动控制原理、计算机视觉、信号与系统、计算机网络"
     },
     {
       "edu_time": ["Year1", "Year4"],
@@ -50,69 +50,68 @@
     },
     {
       "work_name": "MatplotStyle_SpillYourGuts",
-      "work_desc": "开源科研可视化风格工具，统一Matplotlib图表样式，提高科研绘图规范化与复现性。",
+      "work_desc": "科研绘图风格管理工具，统一Matplotlib风格，助力科研可视化标准化。",
       "visit_link": "https://github.com/Lvisxwj/MatplotStyle_SpillYourGuts",
       "dataIndex": 1
     }
   ],
   "projectList": [
     {
-      "project_name": "点云三维重建与表面拟合算法研究",
-      "project_role": "算法研发 / 数据建模",
-      "project_time": "2025",
-      "project_desc": "针对工业扫描场景的点云重建任务，研究基于特征提取与几何约束的三维点云重建与表面拟合算法，实现从稀疏点到连续曲面的高精度重建。",
-      "project_content": "1. 使用Open3D与PCL实现点云去噪、下采样与法向量估计；\n2. 基于RANSAC与最小二乘曲面拟合实现模型重建；\n3. 在自采样工业件点云上测试，表面拟合误差控制在1.5mm以内；\n4. 结果应用于数学建模比赛并获奖。"
-    },
-    {
-      "project_name": "高光谱图像重建与三维成像系统研究（Coded-Aperture + 深度学习）",
-      "project_role": "算法设计 / 模型优化",
+      "project_name": "智能车路径规划与控制系统（校智能车竞赛）",
+      "project_role": "算法设计 / 控制实现",
       "project_time": "2024, 2025",
-      "project_desc": "结合光学编码系统与深度学习实现高光谱图像三维重建，探索多维成像与几何配准方法在计算成像中的融合应用。",
-      "project_content": "1. 搭建PyTorch端到端光谱重建网络，设计U-Net + Transformer融合结构；\n2. 实现光学系统几何标定与图像配准，优化光轴一致性；\n3. 在自制数据集上完成训练与重建，PSNR提升约18%；\n4. 研究结果作为ISPRS JPRS论文在投。"
+      "project_desc": "基于摄像头和超声波传感器的智能小车系统，实现路径规划与自动避障控制，参赛作品在校内赛中完成全自主路线运行。",
+      "project_content": "1. 使用OpenCV进行车道线检测与形态学处理，提取行驶轨迹；\n2. 基于PID控制算法实现速度与方向控制；\n3. 设计A* + Dijkstra混合路径规划模块，平衡路径长度与避障安全；\n4. 系统在ROS仿真环境与实车上均完成稳定运行。"
     },
-
     {
-      "project_name": "多线程优化与整数规划调度模型（全国大学生数学建模竞赛）",
+      "project_name": "Unreal Engine C++ 游戏物理与AI模块开发",
+      "project_role": "游戏逻辑 / 引擎算法实现",
+      "project_time": "2023 - 2024",
+      "project_desc": "使用C++在Unreal Engine 5中实现AI与物理控制模块，从算法与架构角度探索实时物理与行为决策系统。",
+      "project_content": "1. 基于UE C++框架编写Actor控制与碰撞检测逻辑；\n2. 实现基于有限状态机的AI控制模块；\n3. 优化物理仿真帧率与Tick事件响应，提升运行稳定性；\n4. 项目展示出良好的实时计算与算法设计能力。"
+    },
+    {
+      "project_name": "多线程优化与整数规划模型（数学建模国赛）",
       "project_role": "算法设计 / 并行实现",
-      "project_time": "2025, 2026",
-      "project_desc": "在调度与运输问题上构建多目标整数规划模型，结合多线程优化加速求解。",
-      "project_content": "1. 使用Python + PuLP建立整数规划模型，解决资源调度与路径优化；\n2. 引入多线程并行机制，运行时间缩短约6倍；\n3. 通过剪枝与启发式搜索提高模型收敛稳定性。"
+      "project_time": "2025",
+      "project_desc": "针对复杂调度问题建立整数规划模型，并通过多线程算法加速求解。",
+      "project_content": "1. 使用C++ + PuLP建模调度与路径规划优化；\n2. 采用多线程并行策略，求解效率提升约6倍；\n3. 应用于生产线与机器人调度任务模拟。"
     }
   ],
   "workExpList": [
     {
       "work_time": ["2024", "至今"],
-      "company_name": "实验室科研实践（杭州电子科技大学）",
-      "work_desc": "• 负责三维视觉相关算法研究与数据实验；<br>• 熟悉点云数据采集与标定流程，进行误差建模与可视化；<br>• 参与编写科研论文与实验报告，完成算法模块代码封装与文档撰写。"
+      "company_name": "校智能车比赛",
+      "work_desc": "• 负责视觉识别与路径规划算法开发；<br>• 熟悉PID、A*、SLAM、卡尔曼滤波等算法；"
     },
     {
       "work_time": ["2023", "2024"],
-      "company_name": "数模与算法竞赛团队",
-      "work_desc": "• 建立调度优化与图像分析模型，完成国赛算法实现；<br>• 参与数学建模、图像识别、三维数据分析等跨学科项目；<br>• 熟练使用Python进行数据分析与可视化展示。"
+      "company_name": "Unreal Engine C++ 开发项目",
+      "work_desc": "• 基于UE5引擎开发AI控制与物理交互模块；<br>• 熟悉引擎底层逻辑与内存管理；<br>• 探索C++在物理仿真与行为建模中的应用。"
     }
   ],
   "skillList": [
     {
       "skill_name": "编程语言",
-      "skill_desc": "精通Python、C++、C，具备良好的面向对象设计与工程实现能力",
+      "skill_desc": "精通C++、Python，熟悉面向对象设计与多线程并发开发",
       "skill_level": 100,
       "dataIndex": 0
     },
     {
-      "skill_name": "算法与模型",
-      "skill_desc": "掌握三维重建、点云处理、ICP配准、CNN/UNet/Transformer、几何标定与优化算法",
+      "skill_name": "机器人算法",
+      "skill_desc": "掌握SLAM、路径规划、等算法，具备实车调试与仿真经验",
       "skill_level": 90,
       "dataIndex": 1
     },
     {
-      "skill_name": "工具与平台",
-      "skill_desc": "熟悉PyTorch、OpenCV、Open3D、PCL、Git、Linux、VSCode、YAML配置管理",
+      "skill_name": "开发平台与工具",
+      "skill_desc": "熟悉OpenCV、PyTorch、Git、Linux、VSCode、Unreal Engine C++",
       "skill_level": 85,
       "dataIndex": 2
     },
     {
-      "skill_name": "科研与可视化",
-      "skill_desc": "具备科研绘图、实验数据分析、论文结果可视化经验",
+      "skill_name": "数学与建模能力",
+      "skill_desc": "扎实的线性代数、最优化与概率统计基础，具备算法建模与求解能力",
       "skill_level": 90,
       "dataIndex": 3
     }
@@ -124,7 +123,7 @@
     },
     {
       "award_time": "2024",
-      "award_info": "校级数学建模二等奖"
+      "award_info": "校级智能车竞赛三等奖"
     },
     {
       "award_time": "2024",
@@ -140,7 +139,7 @@
     }
   ],
   "theme": {
-    "color": "#0056B3",
-    "tagColor": "#2E86AB"
+    "color": "#004F9F",
+    "tagColor": "#2C8ED6"
   }
 }
