@@ -1,8 +1,8 @@
 {
   "titleNameMap": {
     "educationList": "教育背景",
-    "workExpList": "科研与项目经历",
-    "projectList": "算法与工程项目",
+    "workExpList": "科研与竞赛经历",
+    "projectList": "算法与数据分析项目",
     "skillList": "专业技能",
     "awardList": "荣誉与证书",
     "workList": "科研成果"
@@ -21,7 +21,7 @@
     "zhihu": "",
     "workExpYear": "在校学生",
     "workPlace": "浙江杭州",
-    "positionTitle": "C++ / 机器人算法实习生"
+    "positionTitle": "算法 / 数据分析实习生"
   },
   "educationList": [
     {
@@ -32,9 +32,9 @@
       "dataIndex": 0
     },
     {
-      "edu_time": ["ML", "Robotics"],
+      "edu_time": ["ML", "AI"],
       "school": "核心课程：",
-      "major": "机器学习、最优化理论与方法、C++面向对象、深度学习、自动控制原理、计算机视觉、信号与系统、计算机网络"
+      "major": "机器学习、最优化理论与方法、深度学习、C++程序设计、数据结构与算法、概率论与数理统计、计算机视觉、自动控制原理、计算机网络"
     },
     {
       "edu_time": ["Year1", "Year4"],
@@ -45,73 +45,80 @@
   "workList": [
     {
       "work_name": "Research on Intelligent Computation Algorithms for Hyperspectral Imaging",
-      "work_desc": "ISPRS JPRS(Q1) 在投论文，负责模型设计与实验验证。",
+      "work_desc": "ISPRS JPRS(Q1) 在投论文，负责数据建模与算法实验设计。",
       "visit_link": "https://github.com/Lvisxwj/coded-apture"
     },
     {
       "work_name": "MatplotStyle_SpillYourGuts",
-      "work_desc": "科研绘图风格管理工具，统一Matplotlib风格，助力科研可视化标准化。",
+      "work_desc": "开源科研绘图风格管理工具，支持可视化标准化与统计数据分析。",
       "visit_link": "https://github.com/Lvisxwj/MatplotStyle_SpillYourGuts",
       "dataIndex": 1
     }
   ],
   "projectList": [
     {
-      "project_name": "智能车路径规划与控制系统（校智能车竞赛）",
-      "project_role": "算法设计 / 控制实现",
-      "project_time": "2024, 2025",
-      "project_desc": "基于摄像头和超声波传感器的智能小车系统，实现路径规划与自动避障控制，参赛作品在校内赛中完成全自主路线运行。",
-      "project_content": "1. 使用OpenCV进行车道线检测与形态学处理，提取行驶轨迹；\n2. 基于PID控制算法实现速度与方向控制；\n3. 设计A* + Dijkstra混合路径规划模块，平衡路径长度与避障安全；\n4. 系统在ROS仿真环境与实车上均完成稳定运行。"
-    },
-    {
-      "project_name": "Unreal Engine C++ 游戏物理与AI模块开发",
-      "project_role": "游戏逻辑 / 引擎算法实现",
-      "project_time": "2023 - 2024",
-      "project_desc": "使用C++在Unreal Engine 5中实现AI与物理控制模块，从算法与架构角度探索实时物理与行为决策系统。",
-      "project_content": "1. 基于UE C++框架编写Actor控制与碰撞检测逻辑；\n2. 实现基于有限状态机的AI控制模块；\n3. 优化物理仿真帧率与Tick事件响应，提升运行稳定性；\n4. 项目展示出良好的实时计算与算法设计能力。"
-    },
-    {
-      "project_name": "多线程优化与整数规划模型（数学建模国赛）",
-      "project_role": "算法设计 / 并行实现",
+      "project_name": "金融时间序列预测与回测系统（数模集训）",
+      "project_role": "算法建模 / 数据分析",
       "project_time": "2025",
-      "project_desc": "针对复杂调度问题建立整数规划模型，并通过多线程算法加速求解。",
-      "project_content": "1. 使用C++ + PuLP建模调度与路径规划优化；\n2. 采用多线程并行策略，求解效率提升约6倍；\n3. 应用于生产线与机器人调度任务模拟。"
+      "project_desc": "利用机器学习模型对股票价格序列进行预测与回测，探索AI在金融数据中的应用。",
+      "project_content": "1. 使用Python + scikit-learn实现LSTM、XGBoost模型；\n2. 对某股行情数据进行特征提取与归一化处理；\n3. 设计回测模块计算预测收益率与最大回撤，收益率提升约12%；\n4. 可视化每日预测与真实价格曲线，辅助策略优化。"
+    },
+    {
+      "project_name": "高光谱图像重建与特征提取算法研究",
+      "project_role": "算法设计 / 模型实现",
+      "project_time": "2024 - 2025",
+      "project_desc": "基于CASSI系统的高光谱图像重建研究，探索深度学习在多维数据重建与特征提取中的应用。",
+      "project_content": "1. 使用PyTorch实现U-Net + Transformer重建网络；\n2. 设计光谱一致性损失函数与正则化项，提高泛化能力；\n3. 在实验数据集上实现光谱重建误差降低15%；\n4. 模型结构与数据处理思路可迁移至多维时序预测任务。"
+    },
+    {
+      "project_name": "数学建模与数据优化分析（全国大学生数学建模竞赛）",
+      "project_role": "算法设计 / 数据建模",
+      "project_time": "2025",
+      "project_desc": "在竞赛中构建多目标优化模型，结合启发式算法与多线程计算求解。",
+      "project_content": "1. 使用Python + PuLP建立优化模型，解决运输调度与利润分配问题；\n2. 结合遗传算法与局部搜索提高求解稳定性；\n3. 提出改进算法后目标函数提升约8%；\n4. 项目成果形成论文，代码与报告均在团队内部开源。"
+    },
+    {
+      "project_name": "科研可视化分析系统 MatplotStyle",
+      "project_role": "可视化与数据分析工具开发",
+      "project_time": "2025",
+      "project_desc": "基于Matplotlib封装科研绘图工具，实现论文级可视化与统计指标输出。",
+      "project_content": "1. 支持数据统计、箱线图、回归曲线与误差分析自动生成；\n2. 使用YAML配置文件快速切换风格模板；\n3. 提升科研报告绘图效率约30%，保证可复现性。"
     }
   ],
   "workExpList": [
     {
       "work_time": ["2024", "至今"],
-      "company_name": "校智能车比赛",
-      "work_desc": "• 负责视觉识别与路径规划算法开发；<br>• 熟悉PID、A*、SLAM、卡尔曼滤波等算法；"
+      "company_name": "科研项目与AI算法实验室（杭州电子科技大学）",
+      "work_desc": "• 参与AI算法模型与数据可视化项目开发；<br>• 负责模型训练与数据分析模块的实现；<br>• 掌握Python数据分析与机器学习建模流程。"
     },
     {
       "work_time": ["2023", "2024"],
-      "company_name": "Unreal Engine C++ 开发项目",
-      "work_desc": "• 基于UE5引擎开发AI控制与物理交互模块；<br>• 熟悉引擎底层逻辑与内存管理；<br>• 探索C++在物理仿真与行为建模中的应用。"
+      "company_name": "校数学建模队 / 算法竞赛组",
+      "work_desc": "• 建立数据预测与优化模型；<br>• 使用NumPy、Pandas进行数据清洗与特征分析；<br>• 熟悉多目标优化与统计分析思路。"
     }
   ],
   "skillList": [
     {
       "skill_name": "编程语言",
-      "skill_desc": "精通C++、Python，熟悉面向对象设计与多线程并发开发",
+      "skill_desc": "精通Python、C++，熟悉面向对象开发与数据结构算法",
       "skill_level": 100,
       "dataIndex": 0
     },
     {
-      "skill_name": "机器人算法",
-      "skill_desc": "掌握SLAM、路径规划、等算法，具备实车调试与仿真经验",
+      "skill_name": "算法与模型",
+      "skill_desc": "掌握机器学习、深度学习、回归预测、聚类、优化算法，了解量化建模与时间序列分析",
       "skill_level": 90,
       "dataIndex": 1
     },
     {
-      "skill_name": "开发平台与工具",
-      "skill_desc": "熟悉OpenCV、PyTorch、Git、Linux、VSCode、Unreal Engine C++",
+      "skill_name": "工具与平台",
+      "skill_desc": "熟悉PyTorch、scikit-learn、Pandas、Matplotlib、Git、Linux、VSCode、Excel数据分析",
       "skill_level": 85,
       "dataIndex": 2
     },
     {
-      "skill_name": "数学与建模能力",
-      "skill_desc": "扎实的线性代数、最优化与概率统计基础，具备算法建模与求解能力",
+      "skill_name": "数据与金融理解",
+      "skill_desc": "具备数据建模、可视化展示与回测分析能力，对AI在智能投顾与金融建模中的应用有兴趣",
       "skill_level": 90,
       "dataIndex": 3
     }
@@ -123,7 +130,7 @@
     },
     {
       "award_time": "2024",
-      "award_info": "校级智能车竞赛三等奖"
+      "award_info": "校级数学建模二等奖"
     },
     {
       "award_time": "2024",
@@ -139,7 +146,7 @@
     }
   ],
   "theme": {
-    "color": "#004F9F",
-    "tagColor": "#2C8ED6"
+    "color": "#223F9C",
+    "tagColor": "#4869C9"
   }
 }
